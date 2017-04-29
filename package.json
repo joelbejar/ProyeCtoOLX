@@ -1,0 +1,28 @@
+{
+  "name": "olx",
+  "version": "1.0.0",
+  "description": "\"# OlxSanMarcos\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinlllR/OlxSanMarcos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinlllR/OlxSanMarcos/issues"
+  },
+  "homepage": "https://github.com/kevinlllR/OlxSanMarcos#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "mongoose": "^4.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

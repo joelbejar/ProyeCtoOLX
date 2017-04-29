@@ -1,5 +1,5 @@
 
-//Core 
+//Core
 const express=require('express');
 const mongoose=require('mongoose');
 
@@ -9,7 +9,7 @@ const database=require('./config/database');
 
 const app=express();
 
-mongoose.connect(database.MONGO_URL_REMOTE);
+mongoose.connect(database.MONGO_URL_LOCAL);
 
 
 //Endpoints
@@ -20,4 +20,3 @@ app.get('/api/:pagina',(req,res)=>{
 });
 
 app.listen(3000);
-

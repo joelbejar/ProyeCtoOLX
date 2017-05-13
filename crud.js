@@ -5,6 +5,8 @@ const route=express.Router();//metodo de la clase Router , router se puede conca
 const route2=express.Router();//
 const bodyParser=require('body-parser');
 const methodOverride=require('method-override');
+const path = require('path');
+
 
 mongoose.connect('localhost:27017/test2');
 const Schema=mongoose.Schema;
@@ -148,4 +150,7 @@ route.route('/user/:id')
 
 app.use('/api',route);//cuando el usuario ingrese al api va a utilizar esa ruta /api/route en el router
 
+app.get("/pagina",(req,res)=>{
+	res.sendFile('plantilla.html',{root:__dirname});
+});
 app.listen(8000);
